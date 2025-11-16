@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 4
+names: ['Crosswalk', 'Don-t Walk', 'Traffic Signal', 'Walk']
+
+roboflow:
+  workspace: walkassist
+  project: walk-assist
+  version: 3
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/walkassist/walk-assist/dataset/3

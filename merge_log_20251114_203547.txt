@@ -1,0 +1,148 @@
+2025-11-14 20:35:47,367 - INFO - ============================================================
+2025-11-14 20:35:47,367 - INFO - Advanced YOLO Dataset Merger
+2025-11-14 20:35:47,367 - INFO - ============================================================
+2025-11-14 20:35:47,368 - INFO - Added merge source: ./street.v1i.yolov8
+2025-11-14 20:35:47,368 - INFO - Added merge source: ./Tactile Guide Path.v1i.yolov8
+2025-11-14 20:35:47,368 - INFO - Added merge source: ./traffic-light.v1i.yolov8
+2025-11-14 20:35:47,368 - INFO - Added merge source: ./Walk Assist.v3i.yolov8
+2025-11-14 20:35:47,368 - INFO - Creating output directory structure...
+2025-11-14 20:35:47,370 - INFO - ============================================================
+2025-11-14 20:35:47,371 - INFO - Building class mapping table...
+2025-11-14 20:35:47,372 - INFO - Base dataset classes (6): ['bicycle', 'bus', 'car', 'motorbike', 'person', 'truck']
+2025-11-14 20:35:47,373 - INFO - 
+Processing source 1: street.v1i.yolov8
+2025-11-14 20:35:47,374 - INFO -   Source classes (18): ['bench', 'bicycle', 'bus', 'car', 'chair', 'clock', 'fire hydrant', 'flag', 'mini_van', 'motorbike', 'om', 'person', 'pottedplant', 'sign', 'stop sign', 'traffic light', 'truck', 'umbrella']
+2025-11-14 20:35:47,374 - INFO -   Classes to merge: ['bicycle', 'bus', 'car', 'chair', 'clock', 'fire hydrant', 'motorbike', 'om', 'person', 'pottedplant', 'truck']
+2025-11-14 20:35:47,374 - INFO -   'bicycle' ¡ú 'bicycle' (exists, index: 0)
+2025-11-14 20:35:47,374 - INFO -   'bus' ¡ú 'bus' (exists, index: 1)
+2025-11-14 20:35:47,375 - INFO -   'car' ¡ú 'car' (exists, index: 2)
+2025-11-14 20:35:47,375 - INFO -   'chair' ¡ú 'chair' (new class, index: 6)
+2025-11-14 20:35:47,375 - INFO -   'clock' ¡ú 'clock' (new class, index: 7)
+2025-11-14 20:35:47,375 - INFO -   'fire hydrant' ¡ú 'fire hydrant' (new class, index: 8)
+2025-11-14 20:35:47,375 - INFO -   'motorbike' ¡ú 'motorbike' (exists, index: 3)
+2025-11-14 20:35:47,375 - INFO -   'om' ¡ú 'om' (new class, index: 9)
+2025-11-14 20:35:47,375 - INFO -   'person' ¡ú 'person' (exists, index: 4)
+2025-11-14 20:35:47,375 - INFO -   'pottedplant' ¡ú 'pottedplant' (new class, index: 10)
+2025-11-14 20:35:47,375 - INFO -   'truck' ¡ú 'truck' (exists, index: 5)
+2025-11-14 20:35:47,376 - INFO - 
+Processing source 2: Tactile Guide Path.v1i.yolov8
+2025-11-14 20:35:47,376 - INFO -   Source classes (1): ['tactile-guide-path']
+2025-11-14 20:35:47,376 - INFO -   Classes to merge: ['tactile-guide-path']
+2025-11-14 20:35:47,377 - INFO -   'tactile-guide-path' ¡ú 'tactile-guide-path' (new class, index: 11)
+2025-11-14 20:35:47,378 - INFO - 
+Processing source 3: traffic-light.v1i.yolov8
+2025-11-14 20:35:47,378 - INFO -   Source classes (6): ['green-light', 'red-light', 'red-ligth', 'red-yellow-light', 'traffic-light', 'yellow-light']
+2025-11-14 20:35:47,378 - INFO -   Classes to merge: ['green-light', 'red-light', 'red-ligth', 'red-yellow-light', 'traffic-light', 'yellow-light']
+2025-11-14 20:35:47,378 - INFO -   'green-light' ¡ú 'green-light' (new class, index: 12)
+2025-11-14 20:35:47,378 - INFO -   'red-light' ¡ú 'red-light' (new class, index: 13)
+2025-11-14 20:35:47,378 - INFO -   'red-ligth' ¡ú 'red-light' (exists, index: 13)
+2025-11-14 20:35:47,378 - INFO -   'red-yellow-light' ¡ú 'red-yellow-light' (new class, index: 14)
+2025-11-14 20:35:47,379 - INFO -   'traffic-light' ¡ú 'traffic-light' (new class, index: 15)
+2025-11-14 20:35:47,379 - INFO -   'yellow-light' ¡ú 'yellow-light' (new class, index: 16)
+2025-11-14 20:35:47,380 - INFO - 
+Processing source 4: Walk Assist.v3i.yolov8
+2025-11-14 20:35:47,380 - INFO -   Source classes (4): ['Crosswalk', 'Don-t Walk', 'Traffic Signal', 'Walk']
+2025-11-14 20:35:47,380 - INFO -   Classes to merge: ['Crosswalk', 'Don-t Walk', 'Walk']
+2025-11-14 20:35:47,380 - INFO -   'Crosswalk' ¡ú 'Crosswalk' (new class, index: 17)
+2025-11-14 20:35:47,380 - INFO -   'Don-t Walk' ¡ú 'Don-t Walk' (new class, index: 18)
+2025-11-14 20:35:47,380 - INFO -   'Walk' ¡ú 'Walk' (new class, index: 19)
+2025-11-14 20:35:47,381 - INFO - 
+Final class list (20): ['bicycle', 'bus', 'car', 'motorbike', 'person', 'truck', 'chair', 'clock', 'fire hydrant', 'om', 'pottedplant', 'tactile-guide-path', 'green-light', 'red-light', 'red-yellow-light', 'traffic-light', 'yellow-light', 'Crosswalk', 'Don-t Walk', 'Walk']
+2025-11-14 20:35:47,381 - INFO - Class mapping table: {
+  "base_bicycle": 0,
+  "base_bus": 1,
+  "base_car": 2,
+  "base_motorbike": 3,
+  "base_person": 4,
+  "base_truck": 5,
+  "s2_1": 0,
+  "s2_2": 1,
+  "s2_3": 2,
+  "s2_4": 6,
+  "s2_5": 7,
+  "s2_6": 8,
+  "s2_9": 3,
+  "s2_10": 9,
+  "s2_11": 4,
+  "s2_12": 10,
+  "s2_16": 5,
+  "tgp_0": 11,
+  "tl_0": 12,
+  "tl_1": 13,
+  "tl_2": 13,
+  "tl_3": 14,
+  "tl_4": 15,
+  "tl_5": 16,
+  "wa_0": 17,
+  "wa_1": 18,
+  "wa_3": 19
+}
+2025-11-14 20:35:47,381 - INFO - 
+============================================================
+2025-11-14 20:35:47,381 - INFO - Copying base dataset...
+2025-11-14 20:35:56,195 - INFO -   train: Copied 7566 images, 7566 labels
+2025-11-14 20:35:57,064 - INFO -   valid: Copied 805 images, 805 labels
+2025-11-14 20:35:57,443 - INFO -   test: Copied 322 images, 322 labels
+2025-11-14 20:35:57,444 - INFO - 
+Merging source: street.v1i.yolov8
+2025-11-14 20:35:57,445 - INFO -   Class indices to merge: {1, 2, 3, 4, 5, 6, 9, 10, 11, 12, 16}
+2025-11-14 20:35:57,740 - INFO -   train: Merged 304 samples
+2025-11-14 20:35:57,817 - INFO -   valid: Merged 84 samples
+2025-11-14 20:35:57,865 - INFO -   test: Merged 46 samples
+2025-11-14 20:35:57,865 - INFO - 
+Merging source: Tactile Guide Path.v1i.yolov8
+2025-11-14 20:35:57,866 - INFO -   Class indices to merge: {0}
+2025-11-14 20:35:57,958 - INFO -   train: Merged 85 samples
+2025-11-14 20:35:57,975 - INFO -   valid: Merged 10 samples
+2025-11-14 20:35:57,982 - INFO -   test: Merged 5 samples
+2025-11-14 20:35:57,982 - INFO - 
+Merging source: traffic-light.v1i.yolov8
+2025-11-14 20:35:57,983 - INFO -   Class indices to merge: {0, 1, 2, 3, 4, 5}
+2025-11-14 20:35:58,207 - INFO -   train: Merged 243 samples
+2025-11-14 20:35:58,227 - INFO -   valid: Merged 21 samples
+2025-11-14 20:35:58,237 - INFO -   test: Merged 10 samples
+2025-11-14 20:35:58,237 - INFO - 
+Merging source: Walk Assist.v3i.yolov8
+2025-11-14 20:35:58,238 - INFO -   Class indices to merge: {0, 1, 3}
+2025-11-14 20:35:58,411 - INFO -   train: Merged 160 samples
+2025-11-14 20:35:58,411 - WARNING -   Walk Assist.v3i.yolov8\valid\images does not exist, skipping
+2025-11-14 20:35:58,411 - WARNING -   Walk Assist.v3i.yolov8\test\images does not exist, skipping
+2025-11-14 20:35:58,412 - INFO - 
+Creating final configuration file...
+2025-11-14 20:35:58,414 - INFO -   Configuration saved: blind_merged.v1\data.yaml
+2025-11-14 20:35:58,414 - INFO -   Merge details saved: blind_merged.v1\merge_details.json
+2025-11-14 20:35:58,414 - INFO - 
+============================================================
+2025-11-14 20:35:58,415 - INFO - Merge Summary
+2025-11-14 20:35:58,415 - INFO - ============================================================
+2025-11-14 20:35:58,420 - INFO -   Base dataset: 8693 samples
+2025-11-14 20:35:58,420 - INFO -     - train: 7566
+2025-11-14 20:35:58,420 - INFO -     - valid: 805
+2025-11-14 20:35:58,421 - INFO -     - test: 322
+2025-11-14 20:35:58,421 - INFO -   Newly merged: 968 samples
+2025-11-14 20:35:58,421 - INFO -     - train: 792
+2025-11-14 20:35:58,421 - INFO -     - valid: 115
+2025-11-14 20:35:58,421 - INFO -     - test: 61
+2025-11-14 20:35:58,421 - INFO -   Final total: 9661 samples
+2025-11-14 20:35:58,423 - INFO -   - car: 2075 bounding boxes
+2025-11-14 20:35:58,423 - INFO -   - tactile-guide-path: 340 bounding boxes
+2025-11-14 20:35:58,423 - INFO -   - truck: 195 bounding boxes
+2025-11-14 20:35:58,423 - INFO -   - yellow-light: 113 bounding boxes
+2025-11-14 20:35:58,423 - INFO -   - green-light: 102 bounding boxes
+2025-11-14 20:35:58,423 - INFO -   - red-light: 74 bounding boxes
+2025-11-14 20:35:58,423 - INFO -   - person: 73 bounding boxes
+2025-11-14 20:35:58,423 - INFO -   - Walk: 67 bounding boxes
+2025-11-14 20:35:58,423 - INFO -   - Crosswalk: 62 bounding boxes
+2025-11-14 20:35:58,424 - INFO -   - Don-t Walk: 61 bounding boxes
+2025-11-14 20:35:58,424 - INFO -   - traffic-light: 59 bounding boxes
+2025-11-14 20:35:58,424 - INFO -   - bus: 51 bounding boxes
+2025-11-14 20:35:58,424 - INFO -   - fire hydrant: 28 bounding boxes
+2025-11-14 20:35:58,424 - INFO -   - bicycle: 17 bounding boxes
+2025-11-14 20:35:58,424 - INFO -   - chair: 14 bounding boxes
+2025-11-14 20:35:58,424 - INFO -   - red-yellow-light: 10 bounding boxes
+2025-11-14 20:35:58,424 - INFO -   - clock: 8 bounding boxes
+2025-11-14 20:35:58,424 - INFO -   - motorbike: 4 bounding boxes
+2025-11-14 20:35:58,424 - INFO -   - pottedplant: 3 bounding boxes
+2025-11-14 20:35:58,425 - INFO -   - om: 1 bounding boxes
+2025-11-14 20:35:58,426 - INFO - Output path: blind_merged.v1
+2025-11-14 20:35:58,426 - INFO - Final number of classes: 20

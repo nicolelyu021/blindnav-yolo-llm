@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 1
+names: ['tactile-guide-path']
+
+roboflow:
+  workspace: tony-lo
+  project: tactile-guide-path
+  version: 1
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/tony-lo/tactile-guide-path/dataset/1

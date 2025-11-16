@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 6
+names: ['green-light', 'red-light', 'red-ligth', 'red-yellow-light', 'traffic-light', 'yellow-light']
+
+roboflow:
+  workspace: object-detection-ttfpu
+  project: traffic-light-qlxsa
+  version: 1
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/object-detection-ttfpu/traffic-light-qlxsa/dataset/1
